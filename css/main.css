@@ -24,7 +24,7 @@ html {
   --white: hsl(0, 0%, 100%);
 }
 
-.container {
+.main {
   width: 90%;
   max-width: 500px;
   margin: 40px auto;
@@ -38,28 +38,28 @@ html {
   border-radius: 10px;
 }
 
-.picture {
+.main__picture {
   width: 100%;
 }
 
-.picture__img {
+.main__img {
   width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 
-.article {
+.main__article {
   width: 90%;
   margin: 30px auto;
 }
 
-.article__title {
+.main__product {
   font-size: 1.2rem;
   letter-spacing: 4px;
   color: var(--dark-grayish-blue);
 }
 
-.article h1 {
+.main__article h1 {
   font-family: "Fraunces", serif;
   font-size: 3.2rem;
   line-height: 1;
@@ -67,15 +67,15 @@ html {
   color: var(--very-dark-blue);
 }
 
-.article__info {
+.main__info {
   font-size: 1.4rem;
   line-height: 1.5;
   color: var(--dark-grayish-blue);
 }
 
-.article__price {
+.main__price {
   width: 210px;
-  margin: 20px 0 15px;
+  margin: 25px 0 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -84,15 +84,15 @@ html {
   color: var(--dark-cyan);
 }
 
-.article__price span {
+.main__price span {
   font-size: 1.4rem;
   text-decoration: line-through;
   color: var(--dark-grayish-blue);
 }
 
-.article__cta {
+.main__cta {
   width: 100%;
-  padding: 17px 0;
+  padding: 15px 0;
   font-weight: bold;
   font-size: 1.5rem;
   border: 1px solid var(--dark-cyan);
@@ -102,11 +102,11 @@ html {
   cursor: pointer;
 }
 
-.article__cta:hover {
+.main__cta:hover {
   background-color: hsl(156, 42%, 18%);
 }
 
-.article__cta img {
+.main__cta img {
   margin-right: 8px;
 }
 
@@ -119,24 +119,25 @@ html {
     display: flex;
     align-items: center;
   }
-  .container {
+  
+  .main {
     max-width: 580px;
     height: 437px;
     display: flex;
     flex-direction: row;
   }
 
-  .picture {
+  .main__picture {
     height: 100%;
   }
 
-  .picture__img {
+  .main__img {
     width: 291px;
     border-top-right-radius: 0; 
     border-bottom-left-radius: 10px;
   }
 
-  .article {
+  .main__article {
     margin: 30px;
   }
 }
