@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--cream);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  /* Primary */
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+
+  /* Neutral */
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+.container {
+  width: 90%;
+  max-width: 500px;
+  margin: 40px auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--white);
+  border-radius: 10px;
+}
+
+.picture {
+  width: 100%;
+}
+
+.picture__img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.article {
+  width: 90%;
+  margin: 30px auto;
+}
+
+.article__title {
+  font-size: 1.2rem;
+  letter-spacing: 4px;
+  color: var(--dark-grayish-blue);
+}
+
+.article h1 {
+  font-family: "Fraunces", serif;
+  font-size: 3.2rem;
+  line-height: 1;
+  margin: 15px 0;
+  color: var(--very-dark-blue);
+}
+
+.article__info {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: var(--dark-grayish-blue);
+}
+
+.article__price {
+  width: 210px;
+  margin: 20px 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Fraunces", serif;
+  font-size: 3.2rem;
+  color: var(--dark-cyan);
+}
+
+.article__price span {
+  font-size: 1.4rem;
+  text-decoration: line-through;
+  color: var(--dark-grayish-blue);
+}
+
+.article__cta {
+  width: 100%;
+  padding: 17px 0;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border: 1px solid var(--dark-cyan);
+  background-color: var(--dark-cyan);
+  border-radius: 8px;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.article__cta:hover {
+  background-color: hsl(156, 42%, 18%);
+}
+
+.article__cta img {
+  margin-right: 8px;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+
+  body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  .container {
+    max-width: 580px;
+    height: 437px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .picture {
+    height: 100%;
+  }
+
+  .picture__img {
+    width: 291px;
+    border-top-right-radius: 0; 
+    border-bottom-left-radius: 10px;
+  }
+
+  .article {
+    margin: 30px;
+  }
+}
