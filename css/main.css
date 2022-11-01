@@ -5,6 +5,9 @@
 }
 
 body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
   font-family: "Montserrat", sans-serif;
   background-color: var(--cream);
 }
@@ -113,13 +116,6 @@ html {
 /* MEDIA QUERIES */
 
 @media (min-width: 768px) {
-
-  body {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-  
   .main {
     max-width: 580px;
     height: 437px;
